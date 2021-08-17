@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     id("org.springframework.boot") version "2.5.3"
     id("io.spring.dependency-management") version "1.0.11.RELEASE"
-    kotlin("jvm") version "1.5.21"
+    kotlin("jvm") version "1.5.30-RC"
     kotlin("plugin.spring") version "1.5.21"
 }
 
@@ -25,6 +25,7 @@ dependencies {
     //implementation ("org.jetbrains.kotlin:kotlin-reflect:1.5.30-RC")
     implementation ("org.apache.logging.log4j:log4j-core:2.14.1")
     implementation ("org.apache.logging.log4j:log4j-slf4j-impl:2.14.1")
+    implementation("org.camunda.community:eze:0.1.0")
     testImplementation("org.junit.jupiter:junit-jupiter-engine:5.7.1")
     testImplementation("org.junit.jupiter:junit-jupiter-params:5.7.1")
     testImplementation ("io.camunda:zeebe-test:1.2.0-alpha1")
