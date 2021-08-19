@@ -15,6 +15,12 @@ repositories {
     mavenCentral()
 }
 
+dependencyManagement{
+    imports {
+        mavenBom("io.camunda:zeebe-bom:1.2.0-alpha1")
+    }
+}
+
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
